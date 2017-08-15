@@ -33,7 +33,7 @@ public class weatherService {
             List<Channel> channels = service.getForecastForLocation(city, DegreeUnit.CELSIUS).first(1);
 
             entity.setCity(city);
-            entity.setTemperature(channels.get(0).getItem().getForecasts().get(0).getHigh()+DegreeUnit.CELSIUS.toString());
+            entity.setTemperature(channels.get(0).getItem().getForecasts().get(0).getHigh()+" "+DegreeUnit.CELSIUS.toString());
             entity.setUpdateTme(currentTime);
             entity.setWeather(channels.get(0).getItem().getForecasts().get(0).getText());
             entity.setWind(channels.get(0).getWind().getSpeed().intValue()+"km/h");

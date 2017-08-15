@@ -9,3 +9,11 @@ The project depends on Oracle JDK 1.8 or later and Maven 3.0+.
 You can run the server locally with `mvn spring-boot:run`. 
 
 Then visit url `http://localhost:8080` on one browser.
+
+# Project structure
+
+screenshot folder saves screenshot pictures.
+
+public folder stores the js and html files.
+
+src folder stores the source codes and test codes.
